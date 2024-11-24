@@ -1,0 +1,74 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 20px;
+}
+
+*, html {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 2rem;
+}
+nav div img {
+	width: 150px;
+}
+nav ul {
+	display: flex;
+	list-style: none;
+	align-items: center;
+	gap: 2rem;
+}
+nav ul li a {
+	text-decoration: none;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	color: #17202a;
+	font-weight: 600;
+	padding: 8px 0;
+	taransition: all;
+	transition-duration: 300ms;
+	border-bottom: 1px solid #85c1e9 rgba (255, 68, 0, 0);
+}
+nav ul li a:hover {
+	border-bottom: 1px solid #85c1e9;
+	color: #85c1e9;
+}
+
+.discography {
+	max-width: 1200px;
+	margin: auto;
+	padding: 20px;
+}
+
+.album {
+	background: #fdfefe;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1)
+	padding: 15px;
+	transition: transform 0.2s;
+}
+.album:hover{
+	transform: scale(1.05);
+}
+.album-cover {
+	width: 100%
+	height: auto;
+	border-radius: 5px;
+}
+h3 {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 1,5em;
+	margin-top: 10px 0;
+}
+.release-date {
+	color: #777;
+}
+.discography {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 20px;
+}
